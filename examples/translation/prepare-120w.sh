@@ -20,8 +20,8 @@ URLS=(
     "/home/sbl/try-huggingface/datasets/zh-120w.txt"
 )
 FILES=(
-    "train.tags.mn-zh.mn"
-    "train.tags.mn-zh.zh"
+    "120w.mn-zh.mn"
+    "120w.mn-zh.zh"
 )
 
 if [ ! -d "$SCRIPTS" ]; then
@@ -58,7 +58,7 @@ cd ../..
 
 echo "pre-processing train data..."
 for l in $src $tgt; do
-    f=train.tags.$lang.$l
+    f=120w.$lang.$l
     tok=train.tags.$lang.tok.$l
 
     # cat $orig/$lang/$f | \
